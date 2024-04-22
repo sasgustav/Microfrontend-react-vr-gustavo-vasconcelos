@@ -17,8 +17,6 @@ O projeto consiste em 4 microfrontends:
 - `app-footer`: O rodapé da aplicação, também carregado dentro de `app-central`.
 - `app-cards`: A seção que exibe uma lista de cards, carregada dentro de `app-central`.
 
-Para tornar o processo de instalação e execução com o Lerna mais claro e detalhado, você pode ajustar a seção do seu README da seguinte forma:
-
 ## 🚀 Instalação e Execução com Lerna
 
 Para instalar e iniciar todos os microfrontends simultaneamente usando Lerna, siga os passos detalhados abaixo. Lerna é uma ferramenta que otimiza o gerenciamento de projetos com múltiplos pacotes, permitindo que você lide com todos eles como se fossem um único projeto.
