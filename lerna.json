@@ -1,5 +1,15 @@
 {
-  "version": "1.0.0",
-  "npmClient": "yarn",
-  "useWorkspaces": true
+  "version": "0.0.1",
+  "npmClient": "npm",
+  "packages": [
+    "app-central",
+    "app-header",
+    "app-footer",
+    "app-cards"
+  ],
+  "command": {
+    "run": {
+      "stream": true
+    }
+  }
 }
