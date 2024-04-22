@@ -45,6 +45,19 @@ Para instalar e iniciar cada microfrontend:
 Para testar a integração dos microfrontends, acesse `app-central` e verifique se os outros estão sendo corretamente carregados e renderizados.
 
 ---
+
+## app-central:
 ![alt text](image.png)
 
+## app-header:
+![alt text](image-1.png)
+
+## app-footer:
+![alt text](image-2.png)
+
+## app-cards:
+![alt text](image-3.png)
+![alt text](image-4.png)
+
+---
 💻 Desenvolvido por [Gustavo Vasconcelos](https://github.com/sasgustav)
