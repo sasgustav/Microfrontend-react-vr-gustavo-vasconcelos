@@ -57,6 +57,7 @@ Para testar a integração dos microfrontends, acesse `app-central` e verifique 
 
 ## app-cards:
 ![alt text](image-3.png)
+### componente de modal:
 ![alt text](image-4.png)
 
 ---
