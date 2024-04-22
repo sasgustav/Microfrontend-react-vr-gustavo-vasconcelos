@@ -56,8 +56,7 @@ button.close-button:hover {
 }
 
 .modal-action:hover {
-  background-color: #026322;
-  opacity: 0.9;
+  background-color: #00AA13;
 }
 
 .modal-action-cancel:hover {
