@@ -57,7 +57,7 @@ npm start
 ```
 Este comando irá executar o script `start` definido no `package.json`, que utiliza o Lerna para iniciar todos os serviços definidos nos pacotes individualmente, cada um em sua própria porta.
 
-### URLs dos Microfrontends
+### 🌐 URLs dos Microfrontends
 Após iniciar os serviços, os microfrontends estarão disponíveis nas seguintes URLs, acessíveis via navegador:
 - `app-central`: [http://localhost:3000](http://localhost:3000)
 - `app-header`: [http://localhost:3001](http://localhost:3001)
@@ -67,13 +67,6 @@ Após iniciar os serviços, os microfrontends estarão disponíveis nas seguinte
 Cada microfrontend carrega componentes específicos, todos hospedados e interagindo através do host `app-central`.
 
 Essas instruções detalham cada etapa, garantindo que o usuário tenha todas as informações necessárias para configurar e executar o projeto com sucesso.
-
-## 🌐 URLs dos Microfrontends
-
-- `app-central`: [http://localhost:3000](http://localhost:3000)
-- `app-header`: [http://localhost:3001](http://localhost:3001)
-- `app-footer`: [http://localhost:3002](http://localhost:3002)
-- `app-cards`: [http://localhost:3003](http://localhost:3003)
 
 ## 🧪 Testes
 
