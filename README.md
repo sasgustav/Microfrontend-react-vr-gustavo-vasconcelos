@@ -1,5 +1,3 @@
-Entendi, vou ajustar o `README.md` para refletir essas informações:
-
 ```markdown
 # Microfrontends com Module Federation e React
 
