@@ -65,7 +65,7 @@ Após iniciar os serviços, os microfrontends estarão disponíveis nas seguinte
 - `app-cards`: [http://localhost:3003](http://localhost:3003)
 
 Cada microfrontend carrega componentes específicos, todos hospedados e interagindo através do host `app-central`.
-```
+
 Essas instruções detalham cada etapa, garantindo que o usuário tenha todas as informações necessárias para configurar e executar o projeto com sucesso.
 
 ## 🌐 URLs dos Microfrontends
