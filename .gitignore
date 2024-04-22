@@ -1,0 +1,50 @@
+# Dependências
+node_modules/
+
+# Arquivos de build
+/dist
+/build
+/out
+
+# Arquivos de logs
+*.log
+npm-debug.log*
+
+# Diretórios e arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos de configuração do editor/IDE
+/.vscode
+/.idea
+/*.sublime-project
+/*.sublime-workspace
+
+# Arquivos de cache do diretório de trabalho
+.cache/
+.next/
+.nuxt/
+public/sw.js
+public/workbox-*.js
+
+# Arquivos de cobertura de teste
+/coverage
+
+# Arquivos de armazenamento local e sessão
+.localstorage
+.session
+
+# Diretórios que podem conter senhas ou chaves privadas
+/config
+/certificates
+
+# Arquivos de configuração do pacote
+/package-lock.json
+/yarn.lock

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.card-content,
+.card-title,
+.card-description,
+.card-price,
+.card-button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-title,
+.card-price {
+  font-weight: 700;
+}
+
+.card-description {
+  font-weight: 400;
+}
+
+.card-some-element {
+  font-weight: 500;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 280px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 500 / 264;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+  flex-grow: 1;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.card-price {
+  font-size: 20px;
+  color: #1B2126;
+  font-weight: 700;
+}
+
+.card-button {
+  padding: 10px 20px;
+  background-color: #02D72F;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card-button:hover {
+  background-color: #037d56;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 41px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 40px);
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,92 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-content {
+  background-color: #FFFFFF;
+  width: 300px; /* ou a largura que você desejar */
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 16px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 24px;
+}
+
+.modal-items {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.modal-item img {
+  width: 50px; /* Ajuste conforme necessário */
+  height: 50px; /* Ajuste conforme necessário */
+  object-fit: cover;
+}
+
+.modal-item-info {
+  flex-grow: 1;
+  margin-left: 8px;
+}
+
+.item-name {
+  font-size: 16px;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+  border-top: 1px solid #E5E5E5;
+}
+
+.modal-action {
+  background-color: #04AA6D; /* Cor do botão */
+  color: white;
+  padding: 8px 16px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-action:hover {
+  background-color: #037d56; /* Cor do botão ao passar o mouse */
+}
