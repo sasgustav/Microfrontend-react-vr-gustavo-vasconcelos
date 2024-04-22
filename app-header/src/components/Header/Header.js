@@ -17,7 +17,7 @@ const Header = () => {
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
       </div>
-      <div className="cart-icon-container" onClick={toggleModal}>
+      <div className="cart-icon-container">
         <div className="cart-icon-background">
           <FiShoppingBag className="cart-icon" />
         </div>        
