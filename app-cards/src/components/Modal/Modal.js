@@ -43,7 +43,7 @@ const Modal = ({ items, onClose }) => {
           ))}
         </ul>
         <div className="modal-actions">
-          <button className="modal-action-cancel" onClick={onClose}>Cancelar</button>
+          <button className="modal-action-cancel" onClick={onClose}>CANCELAR</button>
           <button className="modal-action" onClick={handlePurchase}>
             Concluir compras
           </button>
