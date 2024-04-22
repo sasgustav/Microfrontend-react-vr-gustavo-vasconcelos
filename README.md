@@ -47,7 +47,7 @@ npm install -g lerna
 ### Passo 4: Instalar Dependências e Vincular Pacotes
 Utilize o Lerna para instalar todas as dependências dos microfrontends e vinculá-las corretamente:
 ```bash
-lerna bootstrap
+npm install
 ```
 
 ### Passo 5: Iniciar os Microfrontends
