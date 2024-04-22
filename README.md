@@ -47,4 +47,3 @@ Para testar a integração dos microfrontends, acesse `app-central` e verifique 
 ---
 
 💻 Desenvolvido por [Gustavo Vasconcelos](https://github.com/sasgustav)
-```
