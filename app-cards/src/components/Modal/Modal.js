@@ -2,6 +2,12 @@ import React from 'react';
 import './Modal.css';
 
 const Modal = ({ items, onClose }) => {
+  
+  const handlePurchase = () => {
+    localStorage.removeItem('cartItems');
+    alert('O carrinho foi limpo. Sua compra foi concluída!');
+    onClose();
+  };
 
   return (
     <div className="modal-backdrop">
@@ -23,7 +29,7 @@ const Modal = ({ items, onClose }) => {
         </ul>
         <div className="modal-actions">
           <button className="modal-action-cancel" onClick={onClose}>Cancelar</button>
-          <button className="modal-action" onClick={() => {}}>
+          <button className="modal-action" onClick={handlePurchase}>
             Concluir compras
           </button>
         </div>
