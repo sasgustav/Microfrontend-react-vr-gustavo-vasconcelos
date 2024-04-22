@@ -4,9 +4,9 @@ Este projeto demonstra a implementação de uma arquitetura de microfrontends ut
 
 ## 🛠 Tecnologias Implementadas
 
-    ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white) Uma biblioteca JavaScript para construir interfaces de usuário.
-    ![Webpack](https://img.shields.io/badge/-Webpack-8DD6F9?style=flat-square&logo=Webpack&logoColor=white) Module Federation: Uma funcionalidade do Webpack que permite um carregamento dinâmico de código entre vários builds de forma independente.
-    ![NPM](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm) Gerenciador de pacotes utilizado para gerenciar as dependências do projeto.
+ - ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white) Uma biblioteca JavaScript para construir interfaces de usuário.
+ - ![Webpack](https://img.shields.io/badge/-Webpack-8DD6F9?style=flat-square&logo=Webpack&logoColor=white) Module Federation: Uma funcionalidade do Webpack que permite um carregamento dinâmico de código entre vários builds de forma independente.
+ - ![NPM](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm) Gerenciador de pacotes utilizado para gerenciar as dependências do projeto.
 
 ## 📂 Estrutura do Projeto
 
