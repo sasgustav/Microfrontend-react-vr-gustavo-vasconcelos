@@ -9,6 +9,17 @@
   justify-content: flex-end;
 }
 
+button.close-button {
+  font-size: x-large;
+}
+
+button.close-button:hover {
+  background-color: #e5e5e5;
+  border-color: #a3a3a3;
+  border-radius: 50px;
+  font-size: x-large;
+}
+
 .modal-content {
   background-color: #FFFFFF;
   width: 627px;

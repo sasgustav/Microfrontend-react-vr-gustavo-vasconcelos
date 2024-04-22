@@ -8,6 +8,7 @@ const Modal = ({ items, onClose }) => {
     localStorage.removeItem('cartItems');
     alert('O carrinho foi limpo. Sua compra foi concluída!');
     onClose();
+    window.location.reload();
   };
 
   const handleClickOutside = (event) => {
