@@ -37,6 +37,13 @@ body {
   justify-content: center;
 }
 
+.gustavo-vasconcelos {
+  font-size: 22px;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin: 0px;
+}
+
 .cart-icon {
   color: white;
   font-size: 24px;

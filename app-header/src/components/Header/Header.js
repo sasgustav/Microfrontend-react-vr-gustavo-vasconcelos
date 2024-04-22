@@ -12,15 +12,16 @@ const Header = () => {
     setIsModalOpen(!isModalOpen);
   };
 
-  return (    
+  return (
     <header className="header">
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
       </div>
+      <h1 className='gustavo-vasconcelos'>Gustavo Vasconcelos</h1>
       <div className="cart-icon-container">
         <div className="cart-icon-background">
           <FiShoppingBag className="cart-icon" />
-        </div>        
+        </div>
       </div>
       {isModalOpen && <Modal onClose={toggleModal} />}
     </header>
