@@ -1,4 +1,4 @@
-# Microfrontends com Module Federation e React 🚀
+# Microfrontends com Module Federation e React - Gustavo Vasconcelos 🚀
 
 Este projeto demonstra a implementação de uma arquitetura de microfrontends utilizando Module Federation e React, onde `app-central` atua como o host principal e carrega os outros microfrontends.
 
