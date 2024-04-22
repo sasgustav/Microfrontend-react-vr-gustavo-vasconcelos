@@ -2,7 +2,6 @@ import React from 'react';
 import './Modal.css';
 
 const Modal = ({ items, onClose }) => {
-  const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
   return (
     <div className="modal-backdrop">
@@ -16,15 +15,17 @@ const Modal = ({ items, onClose }) => {
             <li key={index} className="modal-item">
               <img src={item.thumbnail} alt={item.title} />
               <div className="modal-item-info">
-                <div className="item-name">{item.title}</div>
-                <div className="item-price">{`R$ ${item.price}`}</div>
+                <span className="item-name">{item.title}</span>
+                <span className="item-price">{`R$ ${item.price.toFixed(2)}`}</span>
               </div>
             </li>
           ))}
         </ul>
         <div className="modal-actions">
           <button className="modal-action-cancel" onClick={onClose}>Cancelar</button>
-          <button className="modal-action" onClick={() => {}}>Concluir compras</button>
+          <button className="modal-action" onClick={() => {/* implementar a lógica de conclusão da compra aqui */}}>
+            Concluir compras
+          </button>
         </div>
       </div>
     </div>
