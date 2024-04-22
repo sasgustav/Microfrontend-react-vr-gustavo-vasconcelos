@@ -24,7 +24,7 @@ Cada microfrontend deve ser instalado e iniciado individualmente. Para isso, sig
 1. Clone o repositório para sua máquina local:
 
 ```bash
-git clone https://seu-repositorio.git
+git clone https://github.com/sasgustav/Microfrontend-react-vr-gustavo-vasconcelos.git
 ```
 
 2. Navegue até o diretório de cada microfrontend:
