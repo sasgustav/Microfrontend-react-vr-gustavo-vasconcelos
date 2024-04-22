@@ -17,21 +17,56 @@ O projeto consiste em 4 microfrontends:
 - `app-footer`: O rodapé da aplicação, também carregado dentro de `app-central`.
 - `app-cards`: A seção que exibe uma lista de cards, carregada dentro de `app-central`.
 
-## 🚀 Instalação e Execução
+Para tornar o processo de instalação e execução com o Lerna mais claro e detalhado, você pode ajustar a seção do seu README da seguinte forma:
 
-Para instalar e iniciar cada microfrontend:
+## 🚀 Instalação e Execução com Lerna
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/sasgustav/Microfrontend-react-vr-gustavo-vasconcelos.git
-   ```
+Para instalar e iniciar todos os microfrontends simultaneamente usando Lerna, siga os passos detalhados abaixo. Lerna é uma ferramenta que otimiza o gerenciamento de projetos com múltiplos pacotes, permitindo que você lide com todos eles como se fossem um único projeto.
 
-2. Instale as dependências e inicie cada aplicativo:
-   ```bash
-   cd app-central # E o mesmo para app-header, app-footer, e app-cards
-   npm install
-   npm start
-   ```
+### Pré-requisitos
+Antes de começar, certifique-se de que você tem `Node.js` e `npm` instalados em sua máquina. Lerna será usado para orquestrar os scripts de instalação e execução.
+
+### Passo 1: Clonar o Repositório
+Primeiro, clone o repositório do projeto usando o seguinte comando no terminal:
+```bash
+git clone https://github.com/sasgustav/Microfrontend-react-vr-gustavo-vasconcelos.git
+```
+
+### Passo 2: Navegar até o Diretório do Projeto
+Depois de clonar o repositório, navegue até o diretório do projeto:
+```bash
+cd Microfrontend-react-vr-gustavo-vasconcelos
+```
+
+### Passo 3: Instalar o Lerna
+Se você ainda não tem o Lerna instalado globalmente, você pode instalá-lo usando o npm:
+```bash
+npm install -g lerna
+```
+
+### Passo 4: Instalar Dependências e Vincular Pacotes
+Utilize o Lerna para instalar todas as dependências dos microfrontends e vinculá-las corretamente:
+```bash
+lerna bootstrap
+```
+
+### Passo 5: Iniciar os Microfrontends
+Finalmente, inicie todos os microfrontends simultaneamente usando:
+```bash
+npm start
+```
+Este comando irá executar o script `start` definido no `package.json`, que utiliza o Lerna para iniciar todos os serviços definidos nos pacotes individualmente, cada um em sua própria porta.
+
+### URLs dos Microfrontends
+Após iniciar os serviços, os microfrontends estarão disponíveis nas seguintes URLs, acessíveis via navegador:
+- `app-central`: [http://localhost:3000](http://localhost:3000)
+- `app-header`: [http://localhost:3001](http://localhost:3001)
+- `app-footer`: [http://localhost:3002](http://localhost:3002)
+- `app-cards`: [http://localhost:3003](http://localhost:3003)
+
+Cada microfrontend carrega componentes específicos, todos hospedados e interagindo através do host `app-central`.
+```
+Essas instruções detalham cada etapa, garantindo que o usuário tenha todas as informações necessárias para configurar e executar o projeto com sucesso.
 
 ## 🌐 URLs dos Microfrontends
 

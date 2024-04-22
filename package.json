@@ -2,15 +2,14 @@
   "name": "module-federation",
   "version": "0.0.1",
   "private": true,
-  "npmClient": "npm",
-  "packages": [
+  "workspaces": [
     "app-central",
     "app-header",
     "app-footer",
     "app-cards"
   ],
   "scripts": {
-    "start": "lerna run --parallel start",
+    "start": "lerna run start --parallel",
     "build": "lerna run build"
   },
   "dependencies": {
