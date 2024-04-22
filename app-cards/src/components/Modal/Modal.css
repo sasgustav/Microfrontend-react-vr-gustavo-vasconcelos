@@ -21,9 +21,11 @@
 }
 
 .modal-header {
-  padding: 24px 24px 16px;
+  padding: 24px 0px 16px;
   display: flex;
   align-items: center;
+  margin-left: 41px;
+  margin-right: 49px;
   justify-content: space-between;
   border-bottom: 1px solid #E5E5E5;
 }
@@ -32,7 +34,7 @@
   background-color: transparent;
   color: #333;
   padding: 10px 20px;
-  border: 1px solid #333;
+  border: 0px solid #333;
   border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
@@ -104,9 +106,12 @@
 .modal-actions {
   display: flex;
   justify-content: space-between;
-  padding: 24px;
-  margin: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: 41px;
+  margin-right: 47px;
   border-top: 1px solid #E5E5E5;
+  flex-direction: row-reverse;
 }
 
 ul.modal-items {
@@ -143,12 +148,6 @@ ul.modal-items {
 
   .modal-backdrop {
     align-items: center;
-  }
-
-  .modal-header,
-  .modal-body,
-  .modal-actions {
-    padding: 20px;
   }
 
   .modal-item-info {
