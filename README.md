@@ -62,5 +62,4 @@ Para testar a integração dos microfrontends, acesse `app-central` e verifique 
 
 ---
 
-Desenvolvido por Gustavo Vasconcelos.
-```
+Desenvolvido por: Gustavo Vasconcelos
