@@ -96,14 +96,14 @@ button.close-button:hover {
   margin-bottom: 24px;
   border: 1px solid #00AA13;
   border-radius: 7px;
-  padding-right: 15px;
+  padding-right: 15px;  
 }
 
 .modal-item img {
-  width: 65px;
-  height: 65px;
-  border-bottom-left-radius: 6px;
-  border-top-left-radius: 6px;
+  width: 75px;
+  height: 75px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
   margin-right: 16px;
 }
 
@@ -114,8 +114,12 @@ button.close-button:hover {
 }
 
 .item-name {
-  font-size: 16px;
-  color: #333333;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.5px;
 }
 
 .item-price {
