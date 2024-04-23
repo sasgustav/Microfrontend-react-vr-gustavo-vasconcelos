@@ -1,7 +1,6 @@
 {
   "name": "app-central",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Gustavo Vasconcelos",
   "license": "MIT",
   "scripts": {

@@ -11,6 +11,11 @@
   ],
   "scripts": {
     "start": "lerna run start --parallel",
+    "stop": "npm run stop-central && npm run stop-header && npm run stop-footer && npm run stop-cards",
+    "stop-central": "kill-port 3000",
+    "stop-header": "kill-port 3001",
+    "stop-footer": "kill-port 3002",
+    "stop-cards": "kill-port 3003",
     "build": "lerna run build"
   },
   "dependencies": {
@@ -27,6 +32,7 @@
     "external-remotes-plugin": "^1.0.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
+    "kill-port": "^1.6.1",
     "lerna": "^4.0.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.91.0",

@@ -53,6 +53,29 @@ Finalmente, inicie todos os microfrontends simultaneamente usando:
 ```bash
 npm start
 ```
+
+### Passo 6: Parar os Microfrontends
+
+Quando você desejar parar todos os microfrontends, pode utilizar o comando `npm stop` que foi configurado para encerrar os servidores que estão rodando em portas específicas. Este comando irá efetivamente enviar sinais para fechar cada servidor que foi inicializado por seus respectivos scripts de inicialização.
+
+Para executar a parada dos microfrontends, siga os passos abaixo:
+
+1. **Abra o terminal**: Navegue até o diretório raiz do projeto onde o `package.json` está localizado.
+
+2. **Execute o comando de parada**:
+   ```bash
+   npm stop
+   ```
+   Este comando utiliza internamente o pacote `kill-port` para encerrar os processos nas portas designadas para cada microfrontend. Os scripts específicos definidos são `stop-central`, `stop-header`, `stop-footer` e `stop-cards`, cada um encarregado de parar o servidor em sua respectiva porta (3000 para o `app-central`, 3001 para o `app-header`, 3002 para o `app-footer`, e 3003 para o `app-cards`).
+
+3. **Verificação**:
+   - Após executar o comando, você pode verificar no terminal se alguma mensagem de erro foi exibida indicando que os processos não foram encerrados corretamente.
+   - Se tudo ocorreu sem erros, os terminais que estavam executando os microfrontends não devem mais mostrar os servidores em execução.
+
+4. **Reiniciar, se necessário**: Se você precisar reiniciar os microfrontends após pará-los, simplesmente execute novamente o comando `npm start` conforme descrito no Passo 5.
+
+Este processo garante que você mantenha um controle efetivo sobre os recursos do sistema e evite a ocupação de portas que poderiam causar conflitos no futuro. Além disso, garante que as alterações feitas no código sejam recarregadas corretamente ao reiniciar os microfrontends.
+
 Este comando irá executar o script `start` definido no `package.json`, que utiliza o Lerna para iniciar todos os serviços definidos nos pacotes individualmente, cada um em sua própria porta.
 
 ## 🌐 URLs dos Microfrontends
