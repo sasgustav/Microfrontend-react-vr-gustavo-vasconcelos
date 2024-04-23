@@ -100,9 +100,10 @@ button.close-button:hover {
 }
 
 .modal-item img {
-  width: 64px;
-  height: 64px;
-  border-radius: 5px;
+  width: 65px;
+  height: 65px;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
   margin-right: 16px;
 }
 
