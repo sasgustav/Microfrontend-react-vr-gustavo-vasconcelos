@@ -1,6 +1,7 @@
 {
   "name": "module-federation",
   "version": "0.0.1",
+  "author": "Gustavo Vasconcelos",
   "private": true,
   "workspaces": [
     "app-central",

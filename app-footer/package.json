@@ -1,6 +1,7 @@
 {
   "name": "appFooter",
   "version": "1.0.0",
+  "author": "Gustavo Vasconcelos",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
