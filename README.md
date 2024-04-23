@@ -108,5 +108,5 @@ Para testar a integração dos microfrontends, acesse `app-central` e verifique 
 ![Componente de Modal](app-cards-component.png)
 
 ---
-💻 Desenvolvido por: 🐙[Gustavo Vasconcelos](https://github.com/sasgustav)
-👤 LinkedIn: 🔗[Gustavo Vasconcelos](https://www.linkedin.com/in/gustavo-vasconcelos-software-engineer/)
+### 💻 Desenvolvido por: 🐙[Gustavo Vasconcelos](https://github.com/sasgustav)
+### 👤 LinkedIn: 🔗[Gustavo Vasconcelos](https://www.linkedin.com/in/gustavo-vasconcelos-software-engineer/)
