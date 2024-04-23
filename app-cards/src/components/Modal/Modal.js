@@ -1,8 +1,25 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Modal.css';
 
-const Modal = ({ items, onClose }) => {
+const Modal = ({ onClose }) => {
   const modalRef = useRef();
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    setItems(cartItems);
+
+    const handleStorageChange = () => {
+      const updatedItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      setItems(updatedItems);
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []);
 
   const handlePurchase = () => {
     localStorage.removeItem('cartItems');
@@ -28,7 +45,7 @@ const Modal = ({ items, onClose }) => {
     <div className="modal-backdrop">
       <div className="modal-content" ref={modalRef}>
         <div className="modal-header">
-          <h2 className="modal-title">Compras</h2>
+          <h2 className="modal-title">Compras ({items.length})</h2>
           <button className="close-button" onClick={onClose}>X</button>
         </div>
         <ul className="modal-items">
