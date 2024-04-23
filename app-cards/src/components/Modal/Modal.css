@@ -69,7 +69,7 @@ button.close-button:hover {
 
 .modal-action-cancel:hover {
   background-color: #e5e5e5;
-  border-color: #a3a3a3;
+  color: #02d72f;
 }
 
 .modal-title {
