@@ -94,18 +94,19 @@ Essas instruções detalham cada etapa, garantindo que o usuário tenha todas as
 Para testar a integração dos microfrontends, acesse `app-central` e verifique se os outros estão sendo corretamente carregados e renderizados.
 
 ## app-central:
-![alt text](app-central.png)
+![APP Central](app-central.png)
 
 ## app-header:
-![alt text](app-header.png)
+![APP Header](app-header.png)
 
 ## app-footer:
-![alt text](app-footer.png)
+![APP Footer](app-footer.png)
 
 ## app-cards:
-![alt text](app-cards.png)
+![APP Cards](app-cards.png)
 ### componente de modal:
-![alt text](app-cards-component.png)
+![Componente de Modal](app-cards-component.png)
 
 ---
-💻 Desenvolvido por [Gustavo Vasconcelos](https://github.com/sasgustav)
+💻 Desenvolvido por: 🐙[Gustavo Vasconcelos](https://github.com/sasgustav)
+👤 LinkedIn: 🔗[Gustavo Vasconcelos](https://www.linkedin.com/in/gustavo-vasconcelos-software-engineer/)
