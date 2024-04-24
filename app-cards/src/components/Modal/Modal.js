@@ -16,7 +16,7 @@ const Modal = ({ onClose }) => {
   const handlePurchase = () => {
     localStorage.removeItem('cartItems');
     toast.success('O carrinho foi limpo. Sua compra foi concluída!', {
-      position: "top-center",
+      position: "top-left",
       autoClose: 2500,
       hideProgressBar: false,
       closeOnClick: true,
