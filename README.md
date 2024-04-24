@@ -106,6 +106,8 @@ Para testar a integração dos microfrontends, acesse `app-central` e verifique 
 ![APP Cards](app-cards.png)
 ### componente de modal:
 ![Componente de Modal](app-cards-component.png)
+### componente de voltar ao topo:
+![componente de Voltar ao Topo](app-cards-component-voltar-ao-topo.png)
 
 ---
 #### 💻 Desenvolvido por: 🐙[Gustavo Vasconcelos](https://github.com/sasgustav)
