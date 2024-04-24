@@ -2,12 +2,12 @@ export const fetchProducts = async () => {
     try {
         const response = await fetch('https://dummyjson.com/products');
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            throw new Error(`Erro HTTP! status: ${response.status}`);
         }
         const data = await response.json();
         return data.products;
     } catch (error) {
-        console.error('Fetching products failed:', error);
+        console.error('Falha ao buscar produtos:', error);
         return [];
     }
 };
