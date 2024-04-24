@@ -3,7 +3,7 @@ import Cards from "./components/Cards/Cards";
 
 const App = () => {
   return (
-    <Cards />
+    <Cards />    
   )
 }
 

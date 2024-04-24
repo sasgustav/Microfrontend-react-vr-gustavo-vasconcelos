@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import './App.css';
-import Spinner from './components/Spinner/Spinner';
 import BackToTop from "./components/BackToTop/BackToTop";
 
 const RemoteAppHeader = React.lazy(() => import("appHeader/App"));
@@ -10,7 +9,7 @@ const RemoteAppCards = React.lazy(() => import("appCards/App"));
 const App = () => {
   return (
     <div className="app-container">
-      <Suspense fallback={<Spinner />}>
+      <Suspense fallback={""}>
         <RemoteAppHeader />
         <main className="content">
           <RemoteAppCards />
