@@ -67,6 +67,13 @@ body {
     align-items: flex-start;
   }
 
+  .gustavo-vasconcelos {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0px;
+  }
+
   .nav-link {
     margin: 0.5rem 0;
   }
