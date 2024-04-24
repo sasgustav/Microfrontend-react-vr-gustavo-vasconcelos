@@ -107,7 +107,9 @@ Para testar a integração dos microfrontends, acesse `app-central` e verifique 
 ### componente de modal:
 ![Componente de Modal](app-cards-component.png)
 ### componente de voltar ao topo:
-![componente de Voltar ao Topo](app-cards-component-voltar-ao-topo.png)
+![Componente de Voltar ao Topo](app-cards-voltar-ao-topo.png)
+### componente de toast de notificação no carrinho:
+![Componente de toast de notificação no carrinho](app-cards-toast.png)
 
 ---
 #### 💻 Desenvolvido por: 🐙[Gustavo Vasconcelos](https://github.com/sasgustav)
