@@ -1,5 +1,8 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Modal.css';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Modal = ({ onClose }) => {
   const modalRef = useRef();
@@ -8,24 +11,23 @@ const Modal = ({ onClose }) => {
   useEffect(() => {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     setItems(cartItems);
-
-    const handleStorageChange = () => {
-      const updatedItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-      setItems(updatedItems);
-    };
-
-    window.addEventListener('storage', handleStorageChange);
-
-    return () => {
-      window.removeEventListener('storage', handleStorageChange);
-    };
   }, []);
 
   const handlePurchase = () => {
     localStorage.removeItem('cartItems');
-    alert('O carrinho foi limpo. Sua compra foi concluída!');
-    onClose();
-    window.location.reload();
+    toast.success('O carrinho foi limpo. Sua compra foi concluída!', {
+      position: "top-center",
+      autoClose: 2500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      onClose: () => {
+        onClose();
+        window.location.reload();
+      }
+    });
   };
 
   const handleClickOutside = (event) => {
@@ -43,6 +45,7 @@ const Modal = ({ onClose }) => {
 
   return (
     <div className="modal-backdrop">
+      <ToastContainer />
       <div className="modal-content" ref={modalRef}>
         <div className="modal-header">
           <h2 className="modal-title">Compras ({items.length})</h2>
