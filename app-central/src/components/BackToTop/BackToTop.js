@@ -29,7 +29,7 @@ const BackToTop = () => {
     return (
         isVisible && (
             <button onClick={scrollToTop} className="back-to-top">
-                ↑ Topo
+                ↑
             </button>
         )
     );
