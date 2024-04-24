@@ -54,7 +54,7 @@ Finalmente, inicie todos os microfrontends simultaneamente usando:
 npm start
 ```
 
-### Passo 6: Parar os Microfrontends
+### Passo 6 (Caso seja necessário encerrar os servidores em portas específicas): Parar os Microfrontends
 
 Quando você desejar parar todos os microfrontends, pode utilizar o comando `npm stop` que foi configurado para encerrar os servidores que estão rodando em portas específicas. Este comando irá efetivamente enviar sinais para fechar cada servidor que foi inicializado por seus respectivos scripts de inicialização.
 
