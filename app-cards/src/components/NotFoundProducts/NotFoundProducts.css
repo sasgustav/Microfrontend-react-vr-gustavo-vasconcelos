@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.not-found-container {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.not-found-container h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.not-found-container p {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+}
