@@ -49,6 +49,10 @@ body {
   z-index: 1000;
 }
 
+.header-menu a:active {
+  transform: scale(0.85);
+}
+
 .header-menu ul {
   list-style: none;
   margin: 0;
