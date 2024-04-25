@@ -36,10 +36,10 @@ const Header = () => {
       {isMenuOpen && (
         <nav className="header-menu">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">APP Central</a></li>
+            <li><a href="http://localhost:3001/" target="_blank" rel="noopener noreferrer">APP Header</a></li>
+            <li><a href="http://localhost:3002/" target="_blank" rel="noopener noreferrer">APP Footer</a></li>
+            <li><a href="http://localhost:3003/" target="_blank" rel="noopener noreferrer">APP Cards</a></li>
           </ul>
         </nav>
       )}

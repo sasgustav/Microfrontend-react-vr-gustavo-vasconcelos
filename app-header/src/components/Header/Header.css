@@ -115,10 +115,10 @@ body {
 }
 
 .modal-item-info {
-  flex-grow: 1;
-  color: black;
-  display: flex;
-  justify-content: space-between;
+    flex-grow: 1;
+    color: black;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width: 768px) {
