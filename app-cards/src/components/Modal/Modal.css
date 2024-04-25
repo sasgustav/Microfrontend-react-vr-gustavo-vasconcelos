@@ -155,6 +155,12 @@ ul.modal-items {
   text-transform: uppercase;
 }
 
+.modal-no-items {
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
 .concluir-compras {
   background-color: #02D72F;
   color: white;

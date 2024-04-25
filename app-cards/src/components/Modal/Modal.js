@@ -3,7 +3,6 @@ import './Modal.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 const Modal = ({ onClose }) => {
   const modalRef = useRef();
   const [items, setItems] = useState([]);
@@ -51,22 +50,28 @@ const Modal = ({ onClose }) => {
           <h2 className="modal-title">Compras ({items.length})</h2>
           <button className="close-button" onClick={onClose}>X</button>
         </div>
-        <ul className="modal-items">
-          {items.map((item, index) => (
-            <li key={index} className="modal-item">
-              <img src={item.thumbnail} alt={item.title} />
-              <div className="modal-item-info">
-                <span className="item-name">{item.title}</span>
-                <span className="item-price">{`R$ ${item.price.toFixed(2)}`}</span>
-              </div>
-            </li>
-          ))}
-        </ul>
+        {items.length > 0 ? (
+          <ul className="modal-items">
+            {items.map((item, index) => (
+              <li key={index} className="modal-item">
+                <img src={item.thumbnail} alt={item.title} />
+                <div className="modal-item-info">
+                  <span className="item-name">{item.title}</span>
+                  <span className="item-price">{`R$ ${item.price.toFixed(2)}`}</span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="modal-no-items">Nenhum produto foi adicionado ao carrinho.</p>
+        )}
         <div className="modal-actions">
           <button className="modal-action-cancel" onClick={onClose}>CANCELAR</button>
-          <button className="modal-action" onClick={handlePurchase}>
-            Concluir compras
-          </button>
+          {items.length > 0 && (
+            <button className="modal-action" onClick={handlePurchase}>
+              Concluir compras
+            </button>
+          )}
         </div>
       </div>
     </div>
