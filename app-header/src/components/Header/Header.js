@@ -1,7 +1,7 @@
 import React, { useState, useTransition } from 'react';
 import './Header.css';
 import logo from '../../../assets/logo.svg';
-import { FiShoppingBag, FiMenu } from 'react-icons/fi';
+import { FiShoppingBag, FiMenu, FiHome, FiLayout, FiBox, FiCreditCard } from 'react-icons/fi';
 import { Suspense } from 'react';
 
 const Modal = React.lazy(() => import('appCards/Modal'));
@@ -43,10 +43,10 @@ const Header = () => {
       {isMenuOpen && (
         <nav className="header-menu">
           <ul>
-            <li><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">APP Central</a></li>
-            <li><a href="http://localhost:3001/" target="_blank" rel="noopener noreferrer">APP Header</a></li>
-            <li><a href="http://localhost:3002/" target="_blank" rel="noopener noreferrer">APP Footer</a></li>
-            <li><a href="http://localhost:3003/" target="_blank" rel="noopener noreferrer">APP Cards</a></li>
+            <li><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer"><FiHome /> APP Central</a></li>
+            <li><a href="http://localhost:3001/" target="_blank" rel="noopener noreferrer"><FiLayout /> APP Header</a></li>
+            <li><a href="http://localhost:3002/" target="_blank" rel="noopener noreferrer"><FiBox /> APP Footer</a></li>
+            <li><a href="http://localhost:3003/" target="_blank" rel="noopener noreferrer"><FiCreditCard /> APP Cards</a></li>
           </ul>
         </nav>
       )}
