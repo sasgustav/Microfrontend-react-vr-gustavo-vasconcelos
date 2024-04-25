@@ -114,11 +114,19 @@ body {
   display: flex;
 }
 
+.menu-icon-container:hover .menu-icon-background {
+  background-color: #333;
+}
+
+.menu-icon-container:active .menu-icon {
+  transform: scale(0.85);
+}
+
 .modal-item-info {
-    flex-grow: 1;
-    color: black;
-    display: flex;
-    justify-content: space-between;
+  flex-grow: 1;
+  color: black;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
