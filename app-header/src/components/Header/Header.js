@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useTransition } from 'react';
 import './Header.css';
 import logo from '../../../assets/logo.svg';
-import { FiShoppingBag } from 'react-icons/fi';
-import { FiMenu } from 'react-icons/fi';
+import { FiShoppingBag, FiMenu } from 'react-icons/fi';
+import { Suspense } from 'react';
 
 const Modal = React.lazy(() => import('appCards/Modal'));
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isPending, startTransition] = useTransition();
 
   const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
+    startTransition(() => {
+      setIsModalOpen(!isModalOpen);
+    });
   };
 
   const toggleMenu = () => {
@@ -32,7 +35,11 @@ const Header = () => {
           <FiShoppingBag className="cart-icon" />
         </div>
       </div>
-      {isModalOpen && <Modal onClose={toggleModal} />}
+      {isModalOpen && (
+        <Suspense fallback={<div>Carregando...</div>}>
+          <Modal onClose={toggleModal} />
+        </Suspense>
+      )}
       {isMenuOpen && (
         <nav className="header-menu">
           <ul>
