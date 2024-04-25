@@ -166,6 +166,18 @@ ul.modal-items {
   color: white;
 }
 
+.close-button:active {
+  transform: scale(0.85);
+}
+
+.modal-action:active {
+  transform: scale(0.85);
+}
+
+.modal-action-cancel:active {
+  transform: scale(0.85);
+}
+
 .cancelar {
   background-color: transparent;
   color: #333333;

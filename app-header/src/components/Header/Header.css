@@ -33,6 +33,7 @@ body {
 .menu-icon {
   color: white;
   font-size: 30px;
+  transition: background-color 0.4s;
 }
 
 .header-menu {
@@ -55,15 +56,20 @@ body {
 }
 
 .header-menu li a {
-  display: block;
-  padding: 12px 16px;
+  display: flex;
+  padding: 16px 20px;
+  font-weight: 500;
   text-decoration: none;
   color: #333;
-  transition: background-color 0.3s;
+  transition: background-color 0.4s;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .header-menu li a:hover {
-  background-color: #f4f4f4;
+  background-color: #02D72F;
+  font-weight: 600;
+  color: #FFFFFF;
 }
 
 .header .logo {

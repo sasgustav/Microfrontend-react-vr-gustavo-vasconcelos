@@ -29,7 +29,7 @@ const Header = () => {
           <FiMenu className="menu-icon" />
         </div>
       </div>
-      <h1 className='gustavo-vasconcelos'>Gustavo Vasconcelos</h1>
+      <h1 className='gustavo-vasconcelos'>Gustavo Vasconcelos :.</h1>
       <div className="cart-icon-container" onClick={toggleModal}>
         <div className="cart-icon-background">
           <FiShoppingBag className="cart-icon" />
@@ -43,10 +43,10 @@ const Header = () => {
       {isMenuOpen && (
         <nav className="header-menu">
           <ul>
-            <li><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer"><FiHome /> APP Central</a></li>
-            <li><a href="http://localhost:3001/" target="_blank" rel="noopener noreferrer"><FiLayout /> APP Header</a></li>
-            <li><a href="http://localhost:3002/" target="_blank" rel="noopener noreferrer"><FiBox /> APP Footer</a></li>
-            <li><a href="http://localhost:3003/" target="_blank" rel="noopener noreferrer"><FiCreditCard /> APP Cards</a></li>
+            <li><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer"><FiHome />APP Central</a></li>
+            <li><a href="http://localhost:3001/" target="_blank" rel="noopener noreferrer"><FiLayout />APP Header</a></li>
+            <li><a href="http://localhost:3002/" target="_blank" rel="noopener noreferrer"><FiBox />APP Footer</a></li>
+            <li><a href="http://localhost:3003/" target="_blank" rel="noopener noreferrer"><FiCreditCard />APP Cards</a></li>
           </ul>
         </nav>
       )}

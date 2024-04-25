@@ -59,11 +59,11 @@
   font-size: 1rem;
   color: #1B2126;
   flex-grow: 1;
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 16.8px; 
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.8px;
 }
 
 .card-bottom {
@@ -71,6 +71,10 @@ line-height: 16.8px;
   justify-content: space-between;
   align-items: center;
   margin-top: 16px;
+}
+
+.card-button:active {
+  transform: scale(0.85);
 }
 
 .card-price {
