@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+.cart-icon-container:active {
+  scale: 0.8;
+}
+
 body {
   display: block;
   font-family: 'Montserrat', sans-serif;
@@ -50,7 +54,7 @@ body {
 }
 
 .header-menu a:active {
-  transform: scale(0.85);
+  transform: scale(1.1);
 }
 
 .header-menu ul {
